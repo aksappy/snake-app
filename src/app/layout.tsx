@@ -35,8 +35,6 @@ export default function RootLayout({
             textAlign: "center",
             position: "fixed",
 
-            padding: "50px",
-
             width: "100%",
           }}
         >

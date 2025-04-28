@@ -8,7 +8,8 @@ export default function Home() {
         marginTop: "0px",
         display: "flex",
         flexDirection: "row",
-        minHeight: "150vh",
+        textAlign: "center",
+        minHeight: "80vh",
         width: "100%",
       }}
     >
@@ -16,9 +17,9 @@ export default function Home() {
       <div
         style={{
           width: "20%",
-          marginTop: "200px",
+          marginTop: "100px",
           flex: 1,
-          backgroundColor: "#f8d7da",
+          backgroundColor: "silver",
           padding: "1rem",
         }}
       >
@@ -31,7 +32,7 @@ export default function Home() {
       <div
         style={{
           width: "60%",
-          marginTop: "200px",
+          marginTop: "100px",
           flex: 2,
           backgroundColor: "#d1ecf1",
           padding: "1rem",
@@ -45,8 +46,8 @@ export default function Home() {
         style={{
           width: "20%",
           flex: 1,
-          marginTop: "200px",
-          backgroundColor: "#d4edda",
+          marginTop: "100px",
+          backgroundColor: "silver",
           padding: "1rem",
         }}
       >

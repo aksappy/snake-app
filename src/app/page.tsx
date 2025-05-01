@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
 
 // pages/index.js (or app/page.tsx)
 export default function Home() {
@@ -18,15 +20,19 @@ export default function Home() {
         style={{
           width: "20%",
           marginTop: "100px",
-          flex: 1,
+
+          display: "flex",
+          flexDirection: "column",
           backgroundColor: "silver",
           padding: "1rem",
         }}
       >
         <h1>New</h1>
-        <h1>Save</h1>
-        <h1>Exit</h1>
+        <Heading title="New Game" />
+        <Heading title="Save Game" />
+        <Heading title="Exit Game" />
       </div>
+      <Button title="Save Changes"></Button>
 
       {/* Middle Column */}
       <div

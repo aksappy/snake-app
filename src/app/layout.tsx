@@ -43,6 +43,8 @@ export default function RootLayout({
           </div>
           <Link href="/child">Child</Link> <br />
           <Link href="/settings">Settings</Link>
+          <br />
+          <Link href="/page">Home</Link>
         </header>
         {children}
         <footer

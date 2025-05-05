@@ -20,19 +20,17 @@ export default function Home() {
         style={{
           width: "20%",
           marginTop: "100px",
-
+          paddingTop: "50px",
           display: "flex",
           flexDirection: "column",
           backgroundColor: "silver",
           padding: "1rem",
         }}
       >
-        <h1>New</h1>
         <Heading title="New Game" />
         <Heading title="Save Game" />
         <Heading title="Exit Game" />
       </div>
-      <Button title="Save Changes"></Button>
 
       {/* Middle Column */}
       <div

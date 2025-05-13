@@ -51,13 +51,15 @@ export default function Home() {
           width: "20%",
           flex: 1,
           marginTop: "100px",
+          display: "flex",
+          flexDirection: "column",
           backgroundColor: "silver",
           padding: "1rem",
         }}
       >
-        <h1>Score</h1>
-        <h1>Highscore</h1>
-        <h1>Timelapsed</h1>
+        <Heading title="Score" />
+        <Heading title="Highscore" />
+        <Heading title="Timelapsed" />
       </div>
     </main>
   );

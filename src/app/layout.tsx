@@ -57,7 +57,7 @@ export default function RootLayout({
             padding: "50px",
           }}
         >
-          Footer
+          EA Sports
         </footer>
       </body>
     </html>

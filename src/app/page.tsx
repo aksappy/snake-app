@@ -57,9 +57,9 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <Heading title="Score" />
-        <Heading title="Highscore" />
-        <Heading title="Timelapsed" />
+        <Heading title="Score" variant="secondary" />
+        <Heading title="Highscore" variant="secondary" />
+        <Heading title="Timelapsed" variant="secondary" />
       </div>
     </main>
   );

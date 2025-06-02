@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
+import Calculator from "@/components/calculator";
 
 // pages/index.js (or app/page.tsx)
 export default function Home() {
@@ -42,7 +45,8 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <h2>Game playing area</h2>
+        <h2>Basic Calculator </h2>
+        <Calculator />
       </div>
 
       {/* Right Column */}

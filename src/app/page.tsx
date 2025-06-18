@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Calculator from "@/components/calculator";
+import NumberPad from "@/components/numberPad";
 
 // pages/index.js (or app/page.tsx)
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         }}
       >
         <Heading title="New Game" />
+
         <Heading title="Save Game" />
         <Heading title="Exit Game" />
       </div>
@@ -45,7 +47,7 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <h2>Basic Calculator </h2>
+        <NumberPad />
         <Calculator />
       </div>
 
@@ -61,7 +63,7 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <Heading title="Score" variant="secondary" />
+        <Heading title="Scores" variant="secondary" />
         <Heading title="Highscore" variant="secondary" />
         <Heading title="Timelapsed" variant="secondary" />
       </div>

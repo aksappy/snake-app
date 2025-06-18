@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Heading from "@/components/Heading";
-import styles from "@/components/calculator.module.css";
+import Styles from "@/components/calculatorstyle.module.css";
 
 export default function Calculator() {
   const [num1, setNum1] = useState<number>(0);
@@ -27,7 +27,6 @@ export default function Calculator() {
         textAlign: "center",
       }}
     >
-      <h2> Calculate</h2>
       <div>
         <input
           type="number"

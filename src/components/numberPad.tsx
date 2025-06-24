@@ -1,8 +1,12 @@
 // NumberPad.tsx
-import React from "react";
+
+import React, { useState } from "react";
+
 import NumberButton from "@/components/numberButton";
+
 const NumberPad: React.FC = () => {
   const [input, setInput] = useState("");
+  const [result, setResult] = useState<string | null>(null);
   const [operatorUsed, setOperatorUsed] = useState(false);
 
   const handleClick = (value: string) => {
@@ -16,12 +20,27 @@ const NumberPad: React.FC = () => {
 
   const handleClear = () => {
     setInput("");
+    setResult(null);
     setOperatorUsed(false);
+  };
+
+  const handleEqual = () => {
+    try {
+      // Safely evaluate the expression
+      const evalResult = eval(input); // Note: eval should not be used in production
+      setResult(evalResult.toString());
+      setInput(evalResult.toString());
+      setOperatorUsed(false);
+    } catch (error) {
+      setResult("Error");
+    }
   };
 
   return (
     <div style={styles.container}>
-      <div style={styles.display}>{input || "Press buttons"}</div>
+      <div style={styles.display}>
+        {result !== null ? `= ${result}` : input || "Calculate"}
+      </div>
 
       <div style={styles.pad}>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
@@ -38,6 +57,7 @@ const NumberPad: React.FC = () => {
         <NumberButton label="*" onClick={() => handleClick("*")} />
         <NumberButton label="/" onClick={() => handleClick("/")} />
         <NumberButton label="Clear" onClick={handleClear} />
+        <NumberButton label="=" onClick={handleEqual} />
       </div>
     </div>
   );

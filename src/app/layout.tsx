@@ -39,7 +39,7 @@ export default function RootLayout({
           }}
         >
           <div>
-            <h2>Snake Game</h2>
+            <h2>Calculate </h2>
           </div>
           <Link href="/child">Child</Link> <br />
           <Link href="/settings">Settings</Link>
@@ -54,7 +54,7 @@ export default function RootLayout({
             bottom: "0",
             width: "100%",
             textAlign: "center",
-            padding: "50px",
+            padding: "5px",
           }}
         >
           EA Sports

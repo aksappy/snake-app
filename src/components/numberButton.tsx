@@ -1,27 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+
+import styles from "@/components/NumberButton.module.css";
 
 type NumberButtonProps = {
-  number: number;
-  onClick: (value: number) => void;
+  label: string;
+  onClick: () => void;
 };
 
-const NumberButton: React.FC<NumberButtonProps> = ({ number, onClick }) => {
+const NumberButton: React.FC<NumberButtonProps> = ({ label, onClick }) => {
   return (
-    <button onClick={() => onClick(number)} style={styles.button}>
-      {number}
+    <button className={styles.button} onClick={onClick}>
+      {label}
     </button>
   );
-};
-
-const styles = {
-  button: {
-    width: "60px",
-    height: "60px",
-    fontSize: "24px",
-    margin: "5px",
-    borderRadius: "8px",
-    cursor: "pointer",
-  },
 };
 
 export default NumberButton;

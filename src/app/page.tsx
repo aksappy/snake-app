@@ -31,10 +31,7 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <Heading title="New Game" />
-
-        <Heading title="Save Game" />
-        <Heading title="Exit Game" />
+        <Heading title="" />
       </div>
 
       {/* Middle Column */}
@@ -48,7 +45,6 @@ export default function Home() {
         }}
       >
         <NumberPad />
-        <Calculator />
       </div>
 
       {/* Right Column */}
@@ -63,9 +59,7 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <Heading title="Scores" variant="secondary" />
-        <Heading title="Highscore" variant="secondary" />
-        <Heading title="Timelapsed" variant="secondary" />
+        <Heading title="" variant="secondary" />
       </div>
     </main>
   );

@@ -59,7 +59,9 @@ export default function Home() {
           padding: "1rem",
         }}
       >
-        <Heading title="" variant="secondary" />
+        <Link href="/child">
+          <Heading title="child" variant="secondary" />
+        </Link>
       </div>
     </main>
   );
